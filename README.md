@@ -9,6 +9,8 @@ spacecraft they’re on.
 Create a program that pulls in this data and displays the
 information from this API in a tabular format.
 
+The scope of this exercise is designed to be small, to take no more than two hours to complete.
+
 ## Example Output
 
 ```
@@ -26,7 +28,8 @@ Scott Kelly         | ISS
 - Read the data directly from the API and parse the results
 each time the program is run. Don’t download the data
 as text and read it in.
-- Write at least *some* tests, but leave some for pairing session.
+- Solve the problem using object-oriented programming. You should have at least one class.
+- Add unit tests if possible. Testing is important at CMM. At a minimum, write testable code. Ideally, write at least *some* tests, but leave some testing work for pairing session.
 
 ## Challenges
 
@@ -34,6 +37,8 @@ as text and read it in.
 longest value in the column.
 - Don’t repeat the name of the craft—group all people by
 craft.
+
+## Do Not Do This Challenge
 - Can you reliably sort the results alphabetically by last
 name? Be careful—some people have spaces in their
 name, like “Mary Sue Van Pelt.”
