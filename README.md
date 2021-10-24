@@ -11,6 +11,12 @@ information from this API in a tabular format.
 
 The scope of this exercise is designed to be small, to take no more than two hours to complete.
 
+## How to Use
+
+1. Open up `irb` or `pry` in the repo's home directory
+2. Type `load './api_parser.rb'`
+3. Type `ApiParser.new.display` to return a table that looks similar to the example below.
+
 ## Example Output
 
 ```

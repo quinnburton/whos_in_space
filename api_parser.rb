@@ -2,9 +2,6 @@
 
 require 'json'
 require 'net/http'
-
-# load './api_parser.rb'
-# ApiParser.new.connect_to_api
 class ApiParser
   def connect_to_api
     url = 'http://api.open-notify.org/astros.json'
