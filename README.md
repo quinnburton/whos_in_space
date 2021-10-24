@@ -9,11 +9,9 @@ spacecraft they’re on.
 Create a program that pulls in this data and displays the
 information from this API in a tabular format.
 
-The scope of this exercise is designed to be small, to take no more than two hours to complete.
-
 ## How to Use
 
-1. Open up `irb` or `pry` in the repo's home directory
+1. In the terminal, open up `irb` or `pry` in the repo's directory.
 2. Type `load './api_parser.rb'`
 3. Type `ApiParser.new.display` to return a table that looks similar to the example below.
 
@@ -32,10 +30,9 @@ Scott Kelly         | ISS
 ## Constraints
 
 - Read the data directly from the API and parse the results
-each time the program is run. Don’t download the data
-as text and read it in.
+each time the program is run. Don’t download the data as text and read it in.
 - Solve the problem using object-oriented programming. You should have at least one class.
-- Add unit tests if possible. Testing is important at CMM. At a minimum, write testable code. Ideally, write at least *some* tests, but leave some testing work for pairing session.
+- Add unit tests if possible. At a minimum, write testable code.
 
 ## Challenges
 
