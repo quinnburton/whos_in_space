@@ -45,6 +45,7 @@ longest value in the column.
 craft.
 
 ## Do Not Do This Challenge
+
 - Can you reliably sort the results alphabetically by last
 name? Be careful—some people have spaces in their
 name, like “Mary Sue Van Pelt.”

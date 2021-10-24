@@ -4,7 +4,7 @@ require 'json'
 require 'net/http'
 
 # Connects to API with astronaut data, then parses the JSON to organize
-# the strings within into a table
+# the strings within into a table.
 class ApiParser
   # Establish connection to desired API
   def connect_to_api
@@ -13,19 +13,19 @@ class ApiParser
     Net::HTTP.get(uri)
   end
 
-  # Once connected to API, parse its JSON
+  # Once connected to API, parse its JSON.
   def parse_api_data
     JSON.parse(connect_to_api)
   end
 
-  # States the present number of people in space
+  # States the present number of people in space.
   def people_count
     count = parse_api_data.values[0]
     puts "There are #{count} people in space right now. \n \n"
   end
 
-  # The headers for the top of the table;
-  # width of the header is as long as the longest value in the column
+  # The capitalized headers for the top of the table;
+  # width of the header is as long as the longest value in the column.
   def headers
     people = parse_api_data.values[1]
     headers = people.first.keys
@@ -42,7 +42,7 @@ class ApiParser
   end
 
   # Iterate through all the people and return the character count
-  # of the longest string for the supplied string type
+  # of the longest string for the supplied string type.
   def find_longest(string)
     return nil unless string == 'name' || string == 'craft'
 
@@ -54,7 +54,8 @@ class ApiParser
     accumulator.sort_by(&:size).max
   end
 
-  # Provides the name of each person and the craft they are on
+  # Provides the name of each person and the craft they are on;
+  # column width is dependent on ther longest item in the column.
   # TODO: Don't repeat the name of the craft--group all people by craft.
   def people_data
     people = parse_api_data.values[1]
@@ -65,7 +66,7 @@ class ApiParser
     end
   end
 
-  # Bringing all the above methods together to return the desired table
+  # Bringing all the above methods together to return the desired table.
   def display
     headers
     divider
